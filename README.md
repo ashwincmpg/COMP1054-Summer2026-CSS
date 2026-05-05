@@ -1,4 +1,4 @@
-#COMP1054 – Summer 2026  
+##COMP1054 – Summer 2026  
 **Interface Design Using CSS**
 
 Welcome to the **COMP1054 GitHub Repository** 🎉  
