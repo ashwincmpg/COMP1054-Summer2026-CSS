@@ -15,41 +15,60 @@
   - Add comments explaining at least 3 changes you made.
 */
 
+/*Extra fixing codes*/
 
+*{
+  box-sizing:border-box;
+}
+ 
+
+/* ================================================*/
 body {
   margin: 0;
   font-family: "Times New Roman", serif;
-  line-height: 1.05;
-  color: #777;
-  background-color: #fff;
+  line-height: 1.6;
+  color: #090909;
+  background-color: #f3f4f6;
 }
 
-site-header {
-  background-color: #eeeeee;
+.site-header { /*error 1,not using dot*/
+  background-color: #111827;
+  color: #ffff;
   padding: 8px;
+  /*max-width: 60%;*/
 }
 
+P{
+  max-width: 68ch;  /*ch - character, its limiting the characters or letters in a line*/
+}
 
 .label {
-  color: #cccccc;
+  color: #a5b4fc;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 0.8 rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
+h1,h2,h3{
+  margin-top: 0;
+}
+
+
 h1 {
-  font-size: 26px;
+  font-size: clamp(2.5rem,7vw,4.5rem);
   font-weight: normal;
   margin: 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: clamp(1.6rem,4vw,2.4rem);
   font-weight: normal;
 }
 
 h3 {
-  font-size: 23px;
+  font-size: clamp(0.6rem,2vw,1.6rem);  /*responsive size changing for text,headings*/
   font-weight: normal;
 }
 
@@ -59,30 +78,45 @@ h3 {
 }
 
 .main-nav ul {
-  margin: 0;
-  padding-left: 40px;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
 }
 
 .main-nav a {
-  color: #999999;
+  display:inline-block;
+  color: #fff;
   text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  background-color: rgba(255,255,255,0.2);
 }
 
-.main-nav a:hovr {
-  color: black;
+.main-nav a:hover {
+  color: #a5b4fc;
 }
 
 .hero-image img {
-  width: 900px;
-  height: 200px;
+  width:100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
 }
+
+.hero-image{
+   margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
 
 section {
   padding: 6px;
   margin: 0;
+  /*max-width: 60%;*/
 }
 
-.event-detials p {
+.event-details p {
   width: 100%;
 }
 
@@ -96,10 +130,11 @@ section {
   margin: 4px;
   padding: 5px;
   border: none;
+
 }
 
-.featured {
-  background-colour: #ffffcc;
+.featured { /*spelling of color*/
+  background-color: #ffffcc;
 }
 
 .cta-button {
